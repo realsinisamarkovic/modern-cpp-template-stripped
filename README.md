@@ -5,7 +5,14 @@ starting point.
 
 Forked from: [https://github.com/filipdutescu/modern-cpp-template](https://github.com/filipdutescu/modern-cpp-template)
 
-Stripped away conan2, catch2 and Github workflows to make the template simpler. Added CMakePresets.json as I mostly use Visual Studio Code as my IDE.
+Removed conan, catch2 and Github workflows to make the template simpler.
+
+Added CMakePresets.json with Debug and Release configure/build/test presets.
+
+Left the Makefile, as it can be modified to work (I don't use it during my regular development, but it can be useful for CI).
+
+Made C++20 the default.
+
 
 ## License
 
