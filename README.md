@@ -9,11 +9,16 @@ Removed conan, catch2 and Github workflows to make the template simpler.
 
 Added CMakePresets.json with Debug and Release configure/build/test presets.
 
-Left the Makefile, as it can be modified to work (I don't use it during my regular development, but it can be useful for CI).
-
 Made C++20 the default.
 
+Run the following setup commands while in project root dir:
+```
+git submodule init
 
+git submodule update
+
+cd vcpkg && ./bootstrap-vcpkg.sh
+```
 ## License
 
 This project is licensed under the [Unlicense](https://unlicense.org/) - see the
